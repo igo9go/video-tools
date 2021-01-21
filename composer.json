@@ -1,0 +1,41 @@
+{
+    "name": "dobest2048/video-tools",
+    "description": "短视频的拓展包，集成各大短视频的去水印功能",
+    "type": "library",
+    "keywords": [
+        "dobest2048",
+        "video-tools"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dobest2048",
+            "email": "dobest20480098@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.0",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-SimpleXML": "*",
+        "ext-mbstring": "*",
+        "ext-libxml": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dobest2048\\VideoTools\\": "src"
+        },
+        "files": [
+            "config/url-validator.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "dobest2048\\Tests\\": "tests"
+        }
+    }
+}
